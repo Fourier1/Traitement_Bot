@@ -151,16 +151,16 @@ class TraiterfichierYOOMEE:
 
         else:
             pass
-
-
-if __name__ == '__main__':
-
-    aviso = TraiterfichierAVISO
-    afnet = TraiterfichierAFNET
-    moov = TraiterfichierMOOVCI
-    nsia = TraiterfichierNSIACI
-    vipnet = TraiterfichierVIPNETCT
-    yoomee = TraiterfichierYOOMEE
+#
+#
+# if __name__ == '__main__':
+#
+#     aviso = TraiterfichierAVISO
+#     afnet = TraiterfichierAFNET
+#     moov = TraiterfichierMOOVCI
+#     nsia = TraiterfichierNSIACI
+#     vipnet = TraiterfichierVIPNETCT
+#     yoomee = TraiterfichierYOOMEE
 
 
 
