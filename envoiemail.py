@@ -13,16 +13,12 @@ def envoi_emailpiece_jointe():
     :return: 
     """
     try:
-        # "saintfourieronesyme@gmail.com"
+
         Fromadd = input("VOTRE EMAIL : ")
-        # "saint02111366"
         Password = input("MOT DE PASSE DE VOTRE GMAIL : ")
-        # "warrensaint1@gmail.com"
         Toadd = input("E-MAIL DU DESTINATAIRE : ")
-        # ["fouriersaint@gmail.com", "formation.cour01@gmail.com"]
         cc = input("MAIL DES PERSONNE EN COMMUN SEPARRER DE (,) :")
         # Spécification des destinataires en copie carbone (cas de plusieurs destinataires)
-        # "juniorwognin34@gmail.com"
         bcc = input("MAIL DE LA TROISIEME PERSONNE EN COMMUN : ")
         # Spécification du destinataire en copie cachée (en copie cachée)
 
@@ -45,7 +41,7 @@ def envoi_emailpiece_jointe():
         # Message à envoyer
         message.attach(MIMEText(msg.encode('utf-8'), 'plain', 'utf-8'))
         # Attache du message à l'objet "message", et encodage en UTF-8
-
+        # tester.zip exemple
         # piece_jointe = ['tester.zip', 'teston.zip']
         nom_fichier = 'tester.zip'
         # Spécification du nom de la pièce jointe
