@@ -5,6 +5,7 @@ import os
 import os.path
 from config import ENTETES, ASN_OPERATEURS
 from creerdoc import dossiermoov, dossieraviso, dossierafnet, dossiernsia, dossiervipnet, dossieryoomee
+from copierfichier import Copyafnet, Copyaviso, Copymoov, Copynsia, Copynvipnet, Copyyoomee
 
 
 class TraiterfichierAVISO:
@@ -26,6 +27,7 @@ class TraiterfichierAVISO:
             sourc.write(contenu)
             sourc.close()
             dossieraviso()
+            Copyaviso()
 
         else:
             pass
@@ -50,6 +52,7 @@ class TraiterfichierAFNET:
             sourc.write(contenu)
             sourc.close()
             dossierafnet()
+            Copyafnet()
 
         else:
             pass
@@ -74,6 +77,7 @@ class TraiterfichierMOOVCI:
             sourc.write(contenu)
             sourc.close()
             dossiermoov()
+            Copymoov()
 
         else:
             pass
@@ -98,12 +102,13 @@ class TraiterfichierNSIACI:
             sourc.write(contenu)
             sourc.close()
             dossiernsia()
+            Copynsia()
 
         else:
             pass
 
 
-class TraiterfichierVIPNETCT:
+class TraiterfichierVIPNET:
     """
     la classe de traitement des fichiers csv VIPNET-CT 
     """
@@ -113,7 +118,7 @@ class TraiterfichierVIPNETCT:
     contenu = ''
     element = 'tester.csv'
     sourc = open(element, 'r')
-    result = os.path.splitext(element)[0] + '_VIPNET-CT.csv'
+    result = os.path.splitext(element)[0] + '_VIPNET.csv'
     entete = ";".join(entetes) + "\n"
     for ligne in sourc:
         if valeur[4] in ligne:
@@ -123,6 +128,7 @@ class TraiterfichierVIPNETCT:
             sourc.write(contenu)
             sourc.close()
             dossiervipnet()
+            Copynvipnet()
 
         else:
             pass
@@ -148,10 +154,11 @@ class TraiterfichierYOOMEE:
             sourc.write(contenu)
             sourc.close()
             dossieryoomee()
+            Copyyoomee()
 
         else:
             pass
-#
+
 #
 # if __name__ == '__main__':
 #
@@ -159,7 +166,7 @@ class TraiterfichierYOOMEE:
 #     afnet = TraiterfichierAFNET
 #     moov = TraiterfichierMOOVCI
 #     nsia = TraiterfichierNSIACI
-#     vipnet = TraiterfichierVIPNETCT
+#     vipnet = TraiterfichierVIPNET
 #     yoomee = TraiterfichierYOOMEE
 
 
