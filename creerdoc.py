@@ -42,3 +42,10 @@ def dossieryoomee():
 
     if not os.path.exists('YOOMEE'):
         os.mkdir(chemindoc + '/YOOMEE')
+
+
+def dossiercompression():
+
+    if not os.path.exists('DOC_COMP'):
+        os.mkdir(chemindoc + '/DOC_COMP')
+

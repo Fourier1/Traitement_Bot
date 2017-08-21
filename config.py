@@ -2,9 +2,10 @@
 # -*- coding: utf-8 -*-
 
 import time
+from couleurs import *
 
-DATE_TRAITEMENT = time.strftime('LA DATE DU TRAITEMENT EST : %A %d %B %Y, ET  L\'HEUR DU TRAITEMENT : %H:%M.',
-                                time.localtime())
+
+DATE_TRAITEMENT = time.strftime('LA DATE DU TRAITEMENT EST : %A %d %B %Y, \n\n\t\t\t ET  L\'HEUR DU TRAITEMENT : %H:%M.', time.localtime())
 
 ASN_OPERATEURS = ['29571', '36974', '37190', '327746', '37381', '37475']
 

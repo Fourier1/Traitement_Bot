@@ -85,7 +85,16 @@ def Copyyoomee():
         for fichier in glob.glob(cheminfichier + '/*_YOOMEE.csv'):
             copyfile = os.path.basename(fichier)
             shutil.move(fichier, cheminfichier + '/YOOMEE/' + copyfile)
-#
-# if __name__ == '__main__':
-#     Copyaviso()
-#     Copyafnet()
+
+
+def Copycompr():
+    """
+    copier les fichiers moov en fonction de leurs nom et les placer 
+    dans les dossiers respectivent
+    :return: 
+    """
+
+    if os.path.exists(cheminfichier):
+        for fichier in glob.glob(cheminfichier + '/*.zip'):
+            copyfile = os.path.basename(fichier)
+            shutil.move(fichier, cheminfichier + '/DOC_COMP/' + copyfile)
