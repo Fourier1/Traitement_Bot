@@ -48,4 +48,3 @@ def dossiercompression():
 
     if not os.path.exists('DOC_COMP'):
         os.mkdir(chemindoc + '/DOC_COMP')
-
