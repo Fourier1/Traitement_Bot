@@ -1,0 +1,8 @@
+
+code de deplacement
+
+        # deplacer la doc de compression dans application
+        # source = '/home/fourier_saint/PycharmProjects/traite/application/DOC_COMP'
+        # dest = '/home/fourier_saint/PycharmProjects/traite/DOC_COMP'
+        # shutil.move(dest, source)
+        # print(" Fin de compression des dossiers !")
